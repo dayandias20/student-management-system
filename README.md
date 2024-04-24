@@ -1,3 +1,5 @@
+This app has been built using React.ts (Frontend) and Java SpringBoot (Backend)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
