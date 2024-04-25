@@ -48,19 +48,12 @@ export const Register = () => {
     // to validate the User
     useEffect(() => {
         USER_REGEX.test(user) ? setValidName(USER_REGEX.test(user)) : console.log("User name : ", user, " not valid");
-        // const result = USER_REGEX.test(user);
-        // console.log(result);
-        // console.log(user);
-        // setValidName(result);
     }, [user]);
 
     useEffect(() => {
         const result = PWD_REGEX.test(pwd);
-        console.log(result);
-        console.log(pwd);
         setValidPwd(result);
         const match = pwd === matchPwd;
-        console.log(match);
         setValidMatch(match);
     }, [ pwd, matchPwd ]);
 
